@@ -1,5 +1,5 @@
 wordsToGuess = {
-    wordsToGuess: ["Beyonce", "Prince", "Sting", "Madonna", "Drake", "Elvis", "Elton", "Janis"]
+    words: ["Beyonce", "Prince", "Sting", "Madonna", "Drake", "Elvis", "Elton", "Janis"]
 
 };
 
@@ -7,7 +7,7 @@ wordsToGuess = {
 
 
 
-console.log(wordsToGuess.wordsToGuess);
+//console.log(wordsToGuess.words);
 
 
 
