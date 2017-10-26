@@ -11,13 +11,17 @@ console.log(wordForUserToGuess);
 var wordSplitIntoArray = wordForUserToGuess.split("");
 console.log(wordSplitIntoArray);
 
-// function showLetterSpaces(word) {
-//     for (var i = 0; i < word.length; i++) {
-//         //[i]+ " ";
+var letterSpaces = [];
+function showLetterSpaces(word) {
+    for (var i = 0; i < wordSplitIntoArray.length; i++) {
+        letterSpaces.push("_");
+    }
 
-//     }
+}
+showLetterSpaces();
 
-// }
+//show the letter spaces w/ a space in between each space
+console.log(letterSpaces.join(" "));
 
 
 //console.log(wordsToGuess.words);
