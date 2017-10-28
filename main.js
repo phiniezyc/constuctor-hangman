@@ -11,7 +11,6 @@ var inquirer = require ("inquirer");
 
 //Displays word to guess as spaces:
 word.joinedLetters();
-
 userGuess.askUserToGuessLetter();
 
 
