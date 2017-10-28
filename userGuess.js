@@ -1,6 +1,7 @@
 var wordsToGuess = require ("./wordsToGuess");
 var word = require ("./word");
 var inquirer = require ("inquirer");
+var restartGame = require ("./restartGame");
 
 
 
@@ -54,6 +55,7 @@ function subtractFromGuessTotal() {
     console.log("You have " + guessesLeft + " left!");
     if (guessesLeft === 0) {
         console.log("game over!");
+        restartGame.restartGame();
     }
 
 }
@@ -62,6 +64,7 @@ function subtractFromGuessTotal() {
 module.exports = {
     askUserToGuessLetter: askUserToGuessLetter,
     checkGameStatus: checkGameStatus,
+    subtractFromGuessTotal: subtractFromGuessTotal,
     
 
 };
