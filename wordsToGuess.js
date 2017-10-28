@@ -1,55 +1,58 @@
-var collectionOfWords = {
-    words: ["beyonce", "prince", "sting", "madonna", "drake", "elvis", "elton", "janis"],
+// var collectionOfWords = {
+//     words: ["beyonce", "prince", "sting", "madonna", "drake", "elvis", "elton", "janis"],
 
 
-};
+// };
 
 
 
 
 
-var Word = {
-    collectionOfWords: ["beyonce", "prince", "sting", "madonna", "drake", "elvis", "elton", "janis"],
+// var Word = {
+//     collectionOfWords: ["beyonce", "prince", "sting", "madonna", "drake", "elvis", "elton", "janis"],
 
-    wordForUserToGuess: collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)],
+//     wordForUserToGuess: this.collectionOfWords[Math.floor(Math.random() * this.collectionOfWords.words.length)],
 
-    showWordForUserToGuess: function() {
-        console.log(this.wordForUserToGuess);
-    },
+//     wordSplitIntoArray: this.wordForUserToGuess.split(""),
 
-    wordSplitIntoArray: function() {
-        console.log(this.wordForUserToGuess.split(""));
-    },
-    letterSpaces: [],
+//     showWordForUserToGuess: function() {
+//         console.log(this.wordForUserToGuess);
+//     },
 
-    showLetterSpaces: function() {
-        for (var i = 0; i < this.wordSplitIntoArray.length; i++) {
-            this.letterSpaces = [];
-            this.letterSpaces.push("_");
-        }
-        console.log(this.letterSpaces);
+//     wordSplitIntoArray: function() {
+//         console.log(this.wordForUserToGuess.split(""));
+//     },
+//     letterSpaces: [],
 
-    }
+//     showLetterSpaces: function() {
+//         for (var i = 0; i < this.wordSplitIntoArray.length; i++) {
+//             this.letterSpaces = [];
+//             this.letterSpaces.push("_");
+//         }
+//         console.log(this.letterSpaces);
 
-};
+//     }
 
-Word.wordSplitIntoArray();
-Word.showLetterSpaces();
+// };
+
+//Word.wordSplitIntoArray();
+//Word.showLetterSpaces();
 
 
-var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
+// var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
 //console.log(wordForUserToGuess);
 
-var wordSplitIntoArray = wordForUserToGuess.split("");
+// var wordSplitIntoArray = wordForUserToGuess.split("");
 //console.log(wordSplitIntoArray);
 
-var letterSpaces = [];
-function showLetterSpaces() {
-    for (var i = 0; i < wordSplitIntoArray.length; i++) {
-        letterSpaces.push("_");
-    }
+// var letterSpaces = [];
 
-}
+// function showLetterSpaces() {
+//     for (var i = 0; i < wordSplitIntoArray.length; i++) {
+//         letterSpaces.push("_");
+//     }
+
+// }
 // showLetterSpaces();
 // console.log(letterSpaces);
 
@@ -69,6 +72,11 @@ function showLetterSpaces() {
 
 
 
-module.export = {
-    wordsToGuess: collectionOfWords
-};
+// module.exports = {
+//     collectionOfWords: collectionOfWords,
+//     Word: Word,
+
+// };
+
+// module.exports = wordForUserToGuess;
+// module.exports = wordSplitIntoArray;
