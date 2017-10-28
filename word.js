@@ -3,7 +3,7 @@ var collectionOfWords = {
 };
 
 var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
-    
+
 var wordSplitIntoArray = wordForUserToGuess.split("");
 //console.log("The word to guess is: " + wordSplitIntoArray);
 
@@ -15,11 +15,11 @@ function showLetterSpaces() {
         letterSpaces.push("_");
     }
 }
- showLetterSpaces();
- //console.log(letterSpaces);
+showLetterSpaces();
+//console.log(letterSpaces);
 
 function joinedLetters() {
-    console.log(letterSpaces.join(" "));  
+    console.log(letterSpaces.join(" "));
 }
 
 
@@ -32,6 +32,5 @@ module.exports = {
     wordSplitIntoArray: wordSplitIntoArray,
     wordForUserToGuess: wordForUserToGuess,
     letterSpaces: letterSpaces,
-    
-};
 
+};

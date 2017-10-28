@@ -1,6 +1,6 @@
-var word = require ("./word");
-var userGuess = require ("./userGuess");
-var inquirer = require ("inquirer");
+var word = require("./word");
+var userGuess = require("./userGuess");
+var inquirer = require("inquirer");
 
 
 
@@ -12,5 +12,3 @@ var inquirer = require ("inquirer");
 //Displays word to guess as spaces:
 word.joinedLetters();
 userGuess.askUserToGuessLetter();
-
-
