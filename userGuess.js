@@ -27,29 +27,8 @@ inquirer.prompt([
     } else {
         console.log("nope");
         wrongLetters.push(answer.guess);
+        console.log(wrongLetters);
     }
-
-
-    //Check if letter guessed in word: 
-
-        // if (wordSplitIntoArray.indexOf(answer.guess) > -1) {
-        //     rightLetters.push(answer.guess);
-        //     console.log(rightLetters);
-        // } else {
-        //     wrongLetters.push(answer.guess);
-        //     console.log(wrongLetters);
-        // }
-
-
-    //if Y show letter and guess again
-    //if ends game then end round...
-
-    // answer.guess is the letter you guess:
-    //console.log("This is your letter: " + answer.guess);
-    //test.push(answer.guess);
-    //console.log("This is the guessed array " + answer.guess);
-
-    //askUserToGuessLetter();
 });
 }
 
