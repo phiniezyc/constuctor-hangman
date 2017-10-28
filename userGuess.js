@@ -16,49 +16,44 @@ inquirer.prompt([
         type: 'input',
         name: 'guess',
         message: 'Guess A letter!'
-
     }
 ]).then(function (answer) {
     console.log("here should check to see if letter in word");
-    if (word.wordSplitIntoArray.indexOf(answer.guess) > -1) {
+    if (word.wordForUserToGuess.indexOf(answer.guess) > -1) {
+        
         rightLetters.push(answer.guess);
+        var replaceLetter = word.wordForUserToGuess.indexOf(answer.guess);
+        console.log(replaceLetter);
+        word.letterSpaces.splice(replaceLetter, 1, answer.guess);
+        console.log(word.letterSpaces);
+        
+
         console.log("yep!");
         console.log(rightLetters);
+        
     } else {
         console.log("nope");
         wrongLetters.push(answer.guess);
-        console.log(wrongLetters);
+        console.log(wrongLetters);  
     }
+    checkGameStatus();
 });
 }
 
-//askUserToGuessLetter();
 
-//Need to get letters that user types in 
-
-//Need to check to see if letter is in word? 
-    //if answer.guess indexOf() === correctLetter ... push to rightWordsArray... if wrong push to wrongWordsArray...
-//If user letter pick is in word THEN show letter correct 
-    //If got all letters, end round and restart game
-
-//If user letter NOT in word, then decrease guesses left
-    //If out of guesses end round restart game 
-
-
-// Not currently using this function:
-function checkLetters() {
-    if (word.wordSplitIntoArray.indexOf(answer.guess) > -1) {
-        rightLetters.push(answer.guess);
-        console.log("yep!");
-        console.log(rightLetters);
+function checkGameStatus() {
+    if (rightLetters === word.wordForUserToGuess) {
+        console.log("You've got it");
     } else {
-        console.log("nope");
+        askUserToGuessLetter();
     }
-
 }
+
+
 
 
 module.exports = {
     askUserToGuessLetter: askUserToGuessLetter,
+    checkGameStatus: checkGameStatus
 
 };
