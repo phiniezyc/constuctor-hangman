@@ -5,7 +5,7 @@ var collectionOfWords = {
 var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
     
 var wordSplitIntoArray = wordForUserToGuess.split("");
-console.log("The word to guess is: " + wordSplitIntoArray);
+//console.log("The word to guess is: " + wordSplitIntoArray);
 
 var letterSpaces = [];
 

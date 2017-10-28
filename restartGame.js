@@ -2,6 +2,7 @@ var inquirer = require ("inquirer");
 var userGuess = require ("./userGuess");
 
 
+
 function restartGame() {
     console.log("Guess a famous musician's name: ");
 inquirer.prompt([
@@ -12,13 +13,16 @@ inquirer.prompt([
     }
 ]).then(function (answer) {
     if (answer.restart === "y") {
-       // userGuess.askUserToGuessLetter();
+        userGuess.askUserToGuessLetter();
     } else {
         console.log("Thanks for playing! Come back soon!");
     }
          
 });
 }
+
+
+
 
 module.exports = {
     restartGame: restartGame,

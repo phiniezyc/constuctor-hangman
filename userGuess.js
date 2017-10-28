@@ -1,4 +1,4 @@
-var wordsToGuess = require ("./wordsToGuess");
+
 var word = require ("./word");
 var inquirer = require ("inquirer");
 var restartGame = require ("./restartGame");
@@ -32,7 +32,7 @@ inquirer.prompt([
         console.log(word.letterSpaces);
          
     } else {
-        console.log("nope");
+        //console.log("nope");
         wrongLetters.push(answer.guess);
         //console.log(wrongLetters);  
     }
