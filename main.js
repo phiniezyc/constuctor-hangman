@@ -14,5 +14,4 @@ word.joinedLetters();
 
 userGuess.askUserToGuessLetter();
 
-//userGuess.checkGameStatus();
 
