@@ -1,6 +1,11 @@
 var collectionOfWords = {
     words: ["beyonce", "prince", "sting", "duke", "drake", "elvis", "elton", "janis", "tupac",],
-    letterSpaces: []
+    letterSpaces: [],
+    showLetterSpaces: function() {
+        for (var i = 0; i < wordSplitIntoArray.length; i++) {
+            collectionOfWords.letterSpaces.push("_");
+        }
+    }
 };
 
 var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
@@ -11,12 +16,12 @@ var wordSplitIntoArray = wordForUserToGuess.split("");
 //var letterSpaces = [];
 
 //===============================Functions===========================
-function showLetterSpaces() {
-    for (var i = 0; i < wordSplitIntoArray.length; i++) {
-        collectionOfWords.letterSpaces.push("_");
-    }
-}
-showLetterSpaces();
+// function showLetterSpaces() {
+//     for (var i = 0; i < wordSplitIntoArray.length; i++) {
+//         collectionOfWords.letterSpaces.push("_");
+//     }
+// }
+collectionOfWords.showLetterSpaces();
 //console.log(letterSpaces);
 
 function joinedLetters() {
