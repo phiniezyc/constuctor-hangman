@@ -1,5 +1,6 @@
 var collectionOfWords = {
-    words: ["beyonce", "prince", "sting", "jimi", "drake", "elvis", "elton", "janis"],
+    words: ["beyonce", "prince", "sting", "duke", "drake", "elvis", "elton", "janis", "tupac",],
+    letterSpaces: []
 };
 
 var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
@@ -7,19 +8,19 @@ var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * coll
 var wordSplitIntoArray = wordForUserToGuess.split("");
 //console.log("The word to guess is: " + wordSplitIntoArray);
 
-var letterSpaces = [];
+//var letterSpaces = [];
 
 //===============================Functions===========================
 function showLetterSpaces() {
     for (var i = 0; i < wordSplitIntoArray.length; i++) {
-        letterSpaces.push("_");
+        collectionOfWords.letterSpaces.push("_");
     }
 }
 showLetterSpaces();
 //console.log(letterSpaces);
 
 function joinedLetters() {
-    console.log(letterSpaces.join(" "));
+    console.log(collectionOfWords.letterSpaces.join(" "));
 }
 
 
@@ -31,6 +32,6 @@ module.exports = {
     joinedLetters: joinedLetters,
     wordSplitIntoArray: wordSplitIntoArray,
     wordForUserToGuess: wordForUserToGuess,
-    letterSpaces: letterSpaces,
+    letterSpaces: collectionOfWords.letterSpaces,
 
 };
