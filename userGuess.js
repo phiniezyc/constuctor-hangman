@@ -25,8 +25,8 @@ function askUserToGuessLetter() {
             //console.log(replaceLetter);
 
             //replaces "_" w/ correct letter guessed by user
-            word.letterSpaces.splice(replaceLetter, 1, answer.guess);
-            console.log(word.letterSpaces);
+            word.collectionOfWords.letterSpaces.splice(replaceLetter, 1, answer.guess);
+            console.log(word.collectionOfWords.letterSpaces);
 
         } else {
             //console.log("nope");
@@ -40,7 +40,7 @@ function askUserToGuessLetter() {
 }
 
 function checkGameStatus() {
-    if (word.letterSpaces.join("") === word.wordForUserToGuess) {
+    if (word.collectionOfWords.letterSpaces.join("") === word.wordForUserToGuess) {
         console.log("You've got it!");
     } else {
         askUserToGuessLetter();
