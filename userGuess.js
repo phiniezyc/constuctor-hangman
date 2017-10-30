@@ -3,10 +3,8 @@ var inquirer = require("inquirer");
 var restartGame = require("./restartGame");
 
 
-
 var rightLetters = [];
 var wrongLetters = [];
-
 var guessesLeft = 10;
 
 //Need to prompt user to pick a word 
@@ -31,7 +29,7 @@ function askUserToGuessLetter() {
         } else {
             //console.log("nope");
             wrongLetters.push(answer.guess);
-            //console.log(wrongLetters);  
+            console.log("Incorrect Letters: " + wrongLetters);
         }
         checkGameStatus();
         subtractFromGuessTotal();
@@ -56,6 +54,8 @@ function subtractFromGuessTotal() {
     }
 
 }
+
+
 
 
 module.exports = {

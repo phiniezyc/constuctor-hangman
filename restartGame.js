@@ -2,7 +2,6 @@ var inquirer = require("inquirer");
 var userGuess = require("./userGuess");
 
 
-
 function restartGame() {
     console.log("Guess a famous musician's name: ");
     inquirer.prompt([{
