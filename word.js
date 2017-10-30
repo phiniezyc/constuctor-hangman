@@ -1,5 +1,5 @@
 var collectionOfWords = {
-    words: ["beyonce", "prince", "sting", "madonna", "drake", "elvis", "elton", "janis"],
+    words: ["beyonce", "prince", "sting", "jimi", "drake", "elvis", "elton", "janis"],
 };
 
 var wordForUserToGuess = collectionOfWords.words[Math.floor(Math.random() * collectionOfWords.words.length)];
